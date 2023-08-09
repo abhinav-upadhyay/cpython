@@ -40,7 +40,7 @@ typedef struct _PyCFrame {
      * WARNING: This makes data on the C stack accessible from
      * heap objects. Care must be taken to maintain stack
      * discipline and make sure that instances of this struct cannot
-     * accessed outside of their lifetime.
+     * be accessed outside of their lifetime.
      */
     /* Pointer to the currently executing frame (it can be NULL) */
     struct _PyInterpreterFrame *current_frame;
